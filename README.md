@@ -3,7 +3,7 @@
 ## Purpose of the project
 
 
-This project was created to provide a use case for the models trained on this repo: [NewsBacklight](https://github.com/ldelille/NewsBacklight).
+This project was created to provide a use case for the models trained on this repo: [nlp-archives](https://github.com/ldelille/NewsBacklight).
 
 The chatbot was developed using [CSML](https://www.csml.dev/) which provides a declarative langage and a conversational engine. 
 The _CSML_ platform provides also easy ways to deploy the conversational agent as well possibility to add _AWS Lambda_ function for recover

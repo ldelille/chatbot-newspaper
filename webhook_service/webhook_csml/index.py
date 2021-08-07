@@ -18,7 +18,7 @@ def index():
 def webhook():
     # return response
     req = request.get_json(force=True)
-    print('res is url', req['is_url']  )
+    logging.info('res is url', req['is_url']  )
     if req['is_url'] == 'false':
         res = test_article.launch_reco_from_id(int(req['article_id']) - 1)
     else:
