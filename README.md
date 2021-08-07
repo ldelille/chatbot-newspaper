@@ -28,7 +28,15 @@ The lambda function is located in `webhook_service/webhook_csml/lambda_csml`. Th
  
 I use ngrok [ngrok](https://ngrok.com/) in the code of the lambda function to create a http tunnel to my local machine. 
 
-The two flask API runs locally. Endpoints are located in  `webhook_service/webhook_csml/index.py`. This codes triggers the live scraping of the article.
+The two flask API runs locally. Endpoints are located in  `webhook_service/webhook_csml/index.py`. To run the base API on port 3000:
+
+```bash
+flask run -h localhost -p 3000
+```
+
+in `webhook_service/webhook_csml`
+
+This codes triggers the live scraping of the article.
 Adding HTTP server in front of a spider is not easy, I use [Scrapyrt](https://github.com/scrapinghub/scrapyrt) which launch an HTTP server which provides API for scheduling Scrapy spiders.
 To get this server live just lauch : 
 
